@@ -1,0 +1,9 @@
+.nostyle{
+    list-style-type: none;
+}
+.navbar_list{
+    display: flex;
+    gap: 8px;
+    width: 100%;
+
+}

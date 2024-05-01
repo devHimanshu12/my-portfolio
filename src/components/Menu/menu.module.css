@@ -14,6 +14,7 @@
 }
 
 .header_container{
+    width: 100%;
     color: #fff;
     top: 0;
     position: fixed;
@@ -34,5 +35,21 @@
 .icon_container_styles{
     width: 48px;
     height: 48px;
-    margin: 0 20px 0 40px;
+    margin-left: 40px;
+}
+
+.right_icon_styles{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.right_icon_container_styles{
+    width: 40px;
+    height: 40px;
+}
+
+
+.right_nav_list{
+    padding: 0 12px;
 }

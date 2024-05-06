@@ -9,7 +9,7 @@ import githubIcon from './../../assets/png/github-icon.png';
 
 
 export default function Menu() {
-    const menuItems: any = [{ id: 2, label: "Projects" }, { id: 3, label: "Open source" }]
+    const menuItems: any = [{ id: 1, label: "About" },{ id: 2, label: "Projects" }, { id: 3, label: "Open source" }]
     return (
         <>
             <header className={classes.header_container}>

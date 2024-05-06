@@ -1,15 +1,21 @@
-import Menu from "./components/Menu/Menu";
-import Home from "./components/Home/Home";
+import Banner from "./components/Banner/Banner";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+
+const routes = createBrowserRouter([
+  {
+    path:"/",
+    element:<Layout/>,
+    children:[{
+      path:"my-portfolio",
+      element:<Banner/>
+    }]
+  }
+])
 
 function App() {
 
-  return (
-    <>
-    <Menu/>
-    <Home/>
-    </>
-    
-  )
+  return <RouterProvider router={routes}/>
 }
 
 export default App

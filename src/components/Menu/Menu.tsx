@@ -4,12 +4,13 @@ import logo from './../../assets/svg/framework-env.svg';
 import { Button } from '../../shared/Button/Button';
 import linkedInIcon from './../../assets/svg/linkedIn-icon.svg';
 import githubIcon from './../../assets/png/github-icon.png';
+import { Link } from 'react-router-dom';
 
 
 
 
 export default function Menu() {
-    const menuItems: any = [{ id: 1, label: "About" },{ id: 2, label: "Projects" }, { id: 3, label: "Open source" }]
+    const menuItems: any = [{ id: 1, label: "About",routePath:"/my-portfolio/home" },{ id: 2, label: "Projects",routePath:"/my-portfolio/projects" }, { id: 3, label: "Open source" }]
     return (
         <>
             <header className={classes.header_container}>
@@ -26,7 +27,9 @@ export default function Menu() {
                         <ul className={classes.navbar_list}>
                             {
                                 menuItems.map((menu: any) => (
-                                    <li key={menu.id} className={classes.nav_list}>{menu.label}</li>
+                                    <li key={menu.id} className={classes.nav_list}>
+                                    <Link to = {menu.routePath}>{menu.label}</Link>
+                                        </li>
                                 ))
                             }
                         </ul>

@@ -1,0 +1,11 @@
+.project_container{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.card_wrapper{
+    display: flex;
+    padding: 10px; 
+}

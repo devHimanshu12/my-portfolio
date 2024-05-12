@@ -10,3 +10,6 @@ export default {
   plugins: [],
 }
 
+module.exports =  {
+  darkMode: 'selector'
+}

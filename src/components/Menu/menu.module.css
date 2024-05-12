@@ -1,5 +1,4 @@
-.nav_list{
-    list-style-type: none;
+.nav_item{
     font-size: 14px;
     font-weight: 700;
     padding: 0 18px;
@@ -48,4 +47,11 @@
 
 .right_nav_list{
     padding: 0 12px;
+}
+
+.active{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 4px;
 }

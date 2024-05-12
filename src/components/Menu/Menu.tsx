@@ -4,13 +4,13 @@ import logo from './../../assets/svg/framework-env.svg';
 import { Button } from '../../shared/Button/Button';
 import linkedInIcon from './../../assets/svg/linkedIn-icon.svg';
 import githubIcon from './../../assets/png/github-icon.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 
 
 export default function Menu() {
-    const menuItems: any = [{ id: 1, label: "About",routePath:"/my-portfolio/home" },{ id: 2, label: "Projects",routePath:"/my-portfolio/projects" }, { id: 3, label: "Open source" }]
+    const menuItems: any = [{ id: 891, label: "Home",routePath:"/my-portfolio/home" },{ id: 3892, label: "Projects",routePath:"/my-portfolio/projects" }]
     return (
         <>
             <header className={classes.header_container}>
@@ -24,15 +24,15 @@ export default function Menu() {
                         </div>
                     </div>
                     <div className='flex-auto justify-start'>
-                        <ul className={classes.navbar_list}>
+                        <nav className={`${classes.navbar_list} ${classes.nav_item}`}>
                             {
                                 menuItems.map((menu: any) => (
-                                    <li key={menu.id} className={classes.nav_list}>
-                                    <Link to = {menu.routePath}>{menu.label}</Link>
-                                        </li>
+                                    <div className={classes.nav_item} key={menu.id}>
+                                        <NavLink  key={menu.id} className={({ isActive }) => (isActive ? classes.active : '')} to = {menu.routePath}>{menu.label}</NavLink>
+                                    </div>
                                 ))
                             }
-                        </ul>
+                        </nav>
                     </div>
                     <div className='flex items-center'>
                         <div className='flex items-center'>

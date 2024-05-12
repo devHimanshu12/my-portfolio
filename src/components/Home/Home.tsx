@@ -9,7 +9,6 @@ export default function Home() {
     "Sentry", "AWS Web Sockets", "AWS DynamoDB", "AWS Lamda", "AWS S3", "GitHub", "GitLab", "D3.js",
     "Highcharts", "Data Visualization", "Tailwind", "SQL", "MySQL"]
   const experienceInfo = expInfo
-  console.log('exp info',experienceInfo)
   return (
     <>
       <div className={`${classes.home_container} flex justify-center`}>

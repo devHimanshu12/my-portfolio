@@ -8,7 +8,6 @@
 // }
 
 export default function Experience({expData}:any) {
-    console.log('exp data',expData)
     return (
         <>
             <h2 className="text-xl font-bold">Experience</h2>

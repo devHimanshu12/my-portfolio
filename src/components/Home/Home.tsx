@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='p-4 text-center gap-4 flex flex-col items-center justify-start bg-teal-200	 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
+      <div className='p-4 text-center gap-4 flex-col items-center justify-start bg-teal-200	 border border-gray-200  shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
         <Experience expData = {experienceInfo}></Experience>
       </div>
     </>

@@ -4,7 +4,7 @@ const Footer = () => {
         <>
             <footer >
                 <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                    <span className="text-sm  sm:text-center">Developed using React, Tailwind and HTML, CSS and JavaScript
+                    <span className="text-sm  sm:text-center">Developed using TypeScript, JavaScript, HTML, and CSS.
                     </span>
                     <ul className="flex flex-wrap items-center mt-3 text-sm font-medium">
                         <li>

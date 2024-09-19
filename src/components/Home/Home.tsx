@@ -1,5 +1,6 @@
 
 import classes from './home.module.css'
+import Footer from "../Footer/Footer";
 import profilePicture from './../../assets/png/profile.jpeg'
 import Experience from '../Experience/Experience'
 import { expInfo } from '../../data/experience'
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <>
       <div className={`${classes.home_container} flex justify-center`}>
-        <div className={`p-4 text-center flex items-center justify-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700`}>
+        <div className={`p-4 text-center flex items-center justify-center  border border-gray-200 rounded-lg shadow sm:p-8`}>
           <div>
             <h1 className='font-bold drop-shadow my-2 font-[20px]'>
               Hi, I am Himanshu Sah
@@ -25,11 +26,11 @@ export default function Home() {
             </h3>
           </div>
         </div>
-        <div className={`p-4 w-[600px] mx-10 text-center flex flex-col flex-wrap bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700`}>
+        <div className={`p-4 w-[600px] mx-10 text-center flex flex-col flex-wrap  border border-gray-200 rounded-lg shadow sm:p-8`}>
           <h1 className='font-bold my-2'>Technical Skills</h1>
           <div className='flex flex-start flex-wrap'>
           {skills.map((skill: string,index:number) => (
-            <span key={index} className='bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 mr-2.5 my-1 rounded dark:bg-blue-900 dark:text-blue-300'>
+            <span key={index} className='text-xs font-medium me-2 px-2.5 py-0.5 mr-2.5 my-1 rounded'>
               {skill}
             </span>
           )
@@ -38,9 +39,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='p-4 text-center gap-4 flex-col items-center justify-start bg-teal-200	 border border-gray-200  shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
+      <div className='p-4 text-center gap-4 flex-col items-center justify-start	 border border-gray-200  shadow sm:p-8'>
         <Experience expData = {experienceInfo}></Experience>
       </div>
+      <Footer/>
     </>
   )
 }

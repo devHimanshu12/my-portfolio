@@ -3,7 +3,7 @@ import Icon from '../../shared/Icon/Icon';
 import logo from './../../assets/svg/framework-env.svg';
 import { Button } from '../../shared/Button/Button';
 import linkedInIcon from './../../assets/svg/linkedIn-icon.svg';
-import githubIcon from './../../assets/png/github-icon.png';
+import githubIcon from './../../assets/png/github-icon-dark.png';
 import { NavLink } from 'react-router-dom';
 
 
@@ -44,14 +44,14 @@ export default function Menu() {
                                 </li>
                                 <li className={`${classes.nav_list} ${classes.right_nav_list}`}>
                                     <a className='flex' href="https://github.com/devHimanshu12" target="_blank" >
-                                        <Icon iconPath={githubIcon} iconStyles={classes.right_icon_styles} iconContainerStyles={classes.right_icon_container_styles} />
+                                        <Icon iconPath={githubIcon} iconStyles={`${classes.right_icon_styles}  ${classes.github_icon}`} iconContainerStyles={classes.right_icon_container_styles} />
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        <div >
+                        {/* <div >
                             <Button label="Theme" />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </header>

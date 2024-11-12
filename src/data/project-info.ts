@@ -18,8 +18,8 @@ export const ProjectInfo = [
         techStack:['Angular','TypeScript','HTML','CSS',]
     },
     {
-        label:"https://devhimanshu12.github.io/note-taking-app/",
-        link:"https://www.sourceease.in/",
+        label:"Note Taking app in Local Browser",
+        link:"https://devhimanshu12.github.io/note-taking-app/",
         description:"A note taking app where you can create tags and use it while creating notes from dropdown and it will saved in your system and used react with typescript.",
         techStack:['React','TypeScript','HTML','CSS','Redux','Redux toolkit','GIT']
     },

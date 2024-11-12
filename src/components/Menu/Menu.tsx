@@ -3,7 +3,6 @@ import Icon from '../../shared/Icon/Icon';
 import logo from './../../assets/svg/framework-env.svg';
 import linkedInIcon from './../../assets/svg/linkedIn-icon.svg';
 import githubIcon from './../../assets/png/github-icon-dark.png';
-import { NavLink } from 'react-router-dom';
 
 
 

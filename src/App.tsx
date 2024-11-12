@@ -8,18 +8,18 @@ const routes = createBrowserRouter([
     path: "/my-portfolio",
     element: <Layout />,
     children: [
+      // {
+      //   index:true,
+      //   element: <Navigate to = "/my-portfolio/" replace />
+      // },
       {
-        index:true,
-        element: <Navigate to = "/my-portfolio/home" replace />
-      },
-      {
-        path:"home",
+        path:"",
         element:<Home/>
       },
-      {
-        path: "projects",
-        element: <Projects />
-      }
+      // {
+      //   path: "projects",
+      //   element: <Projects />
+      // }
     ]
   }
 ])

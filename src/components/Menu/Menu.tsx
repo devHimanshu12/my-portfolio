@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 
 
 export default function Menu() {
-    const menuItems: any = [{ id: 891, label: "Home",routePath:"/my-portfolio/home" },{ id: 3892, label: "Projects",routePath:"/my-portfolio/projects" }]
+    // const menuItems: any = [{ id: 891, label: "Home",routePath:"/my-portfolio/home" },{ id: 3892, label: "Projects",routePath:"/my-portfolio/projects" }]
     return (
         <>
             <header className={classes.header_container}>
@@ -22,7 +22,7 @@ export default function Menu() {
                             Software Engineer
                         </div>
                     </div>
-                    <div className='flex-auto justify-start'>
+                    {/* <div className='flex-auto justify-start'>
                         <nav className={`${classes.navbar_list} ${classes.nav_item}`}>
                             {
                                 menuItems.map((menu: any) => (
@@ -32,7 +32,7 @@ export default function Menu() {
                                 ))
                             }
                         </nav>
-                    </div>
+                    </div> */}
                     <div className='flex items-center'>
                         <div className='flex items-center'>
                             <ul className={classes.navbar_list}>
